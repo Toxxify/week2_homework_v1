@@ -3,6 +3,7 @@
 }
 body {
 	margin: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 a {
 	text-decoration: none;
@@ -21,13 +22,8 @@ li {
 }
 .main-title {
 	display: none;
-	text-transform: uppercase;
-	font-size: 60px;
-	line-height: 70px;
-	letter-spacing: 5.7px;
 }
 .section-title {
-	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -48,7 +44,6 @@ li {
 	}
 }
 .block-title {
-	font-family: 'Open Sans';
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 13px;
@@ -57,15 +52,13 @@ li {
 	text-transform: uppercase;
 }
 .text {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
-	line-height: 23px;	/* or 177% */
+	line-height: 23px;
 	letter-spacing: 0.1875px;
-	color: #48555B;
+	color: @text-color;
 	font-weight: 400px;
 }
 .btn {
-	font-family: 'Open Sans';
 	display: inline-block;
 	font-weight: bold;
 	font-size: 13px;
@@ -78,6 +71,10 @@ li {
 	background: @main-color;
 	text-transform: uppercase;
 	border: none;
+	&:hover {
+		transition: all .3s;
+		background: darken(@main-color, 5%);
+	}
 }
 
 
@@ -85,6 +82,7 @@ li {
 @text-color: #48555B;
 @main-color: #00A4E5;
 @background-main: #171819;
+
 
 
 .intro {
@@ -111,14 +109,12 @@ li {
 		}
   }
   &__subtitle {
-    font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 22px;
   }
   &__btn {
-    font-family: 'Open Sans';
 		font-weight: 400;
 		font-size: 11px;
 		line-height: 15px;
@@ -130,7 +126,7 @@ li {
 
 
 .topbar {
-	padding: 24px 0 23px;
+	padding: 21px 0 21px;
 	border-bottom: 1px solid #E6E6E6;
 	&__wrapper {
 		display: flex;
@@ -147,10 +143,8 @@ li {
 		display: flex;
 		justify-content: space-between;
 	}
-	&__item {
-	}
+	&__item {	}
 	&__link	{
-		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 600;
 		font-size: 12px;
@@ -160,15 +154,15 @@ li {
 		color: @text-color;
 		text-transform: uppercase;
 		&:hover {
+			transition: all .2s;
 			color: @main-color;
 		}
 	}
 }
 
 
-
 .story {
-	padding: 40px 0 48px;
+	padding: 42px 0 48px;
 	margin-bottom: 40px;
 	&__title {
 		.section-title();
@@ -182,7 +176,6 @@ li {
 		max-width: 405px;
 	}
 	&__theme {
-		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
@@ -218,18 +211,16 @@ li {
 			}
 		}
 		&-text {
-			font-family: 'Open Sans';
 			font-style: normal;
 			font-weight: 800;
 			font-size: 24px;
-			line-height: 29px;		/* or 121% */
+			line-height: 29px;
 			letter-spacing: 0.1875px;
 			color: #FFFFFF;
 			text-transform: uppercase;
 		}
 	}
 }
-
 
 
 .capabilities {
@@ -248,7 +239,6 @@ li {
 		}
 	}
 	&__slogan {
-		font-family: 'Open Sans';
 		max-width: 405px;
 		font-weight: 400;
 		font-size: 11px;
@@ -266,12 +256,10 @@ li {
 	&__card {
 		border: 1px solid #E6E6E6;
 		max-width: 295px;
-		padding: 38px 23px 24px;
+		padding: 35px 23px 24px;
 		&-icon {
-
 		}
 		&-title {
-			font-family: 'Open Sans';
 			font-style: normal;
 			font-weight: bold;
 			font-size: 16px;
@@ -285,9 +273,6 @@ li {
 			.text();
 		}
 	}
-
-
-
 }
 
 
@@ -298,20 +283,18 @@ li {
 	background-size: cover;
 	background-position: bottom;
 	&__title {
-		font-family: 'Open Sans';
 		margin: 0 auto;
 		max-width: 350px;
 		font-weight: bold;
 		font-size: 30px;
-		line-height: 36px;		/* or 120% */
+		line-height: 36px;
 		letter-spacing: 0.15px;
 		text-align: center;
-		color: #48555B;
+		color: @text-color;
 		margin-bottom: 34px;
 	}
 	&__link {	}
 }
-
 
 
 .newsletter {
@@ -324,7 +307,6 @@ li {
 		padding: 30px 0;
 	}
 	&__appeal {
-		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 22px;
@@ -335,20 +317,21 @@ li {
 	}
 	&__form {
 		font-size: 0;
+		display: flex;
+		align-items: center;
 	}
 	&__input {
 		padding: 0 16px;
 		width: 250px;
 		border: 1px solid #979797;
 		height: 40px;
-		line-height: 40;
+		line-height: 40px;
 		font-size: 14px;
 	}
 	&__btn {
 		.btn();
 	}
 }
-
 
 
 .footer {
@@ -360,6 +343,7 @@ li {
 	}
 }
 
+
 .company {
 	flex: 0 0 34%;
 	&__title {
@@ -370,13 +354,11 @@ li {
 	&__logo {	}
 	&__text {
 		max-width: 250px;
-		font-family: 'Open Sans';
 		font-size: 11px;
-		line-height: 19px;		/* or 173% */
+		line-height: 19px;
 		letter-spacing: 0.85px;
 	}
 }
-
 
 
 .links {
@@ -384,53 +366,43 @@ li {
 	&__title {
 		.block-title();
 	}
-
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		max-width: 262px;
 	}
-
-	&__group {
-		
-	}
-
-	&__list {
-		
-	}
-
-	&__item {
-		
-	}
-
+	&__group {	}
+	&__list {	}
+	&__item {	}
 	&__link {
-		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 600;
 		font-size: 11px;
-		line-height: 25px; /* or 227% */
+		line-height: 25px;
 		letter-spacing: 0.846154px;
 		text-transform: uppercase;
+		&:hover {
+			transition: all .2s;
+			color: @main-color;
+		}
 	}
 }
-
 
 
 .contact {
 	flex: 0 0 32%;
 	&__title {
 		.block-title();
-		margin-bottom: 14px;
+		margin-bottom: 15px;
 	}
 	&__wrapper {
 		display: flex;
 		max-width: 120px;
 	}
 	&__data {
-		font-family: 'Open Sans', sans-serif;
 		max-width: 140px;
 		font-size: 11px;
-		line-height: 16px; /* or 145% */
+		line-height: 16px;
 		letter-spacing: 0.846154px;
 	}
 	&__adress {
@@ -453,11 +425,11 @@ li {
 	}
 }
 
+
 .copy {
 	background-color: @background-main;
 	padding: 21px 0 22px;
 	&__text {
-		font-family: 'Open Sans', sans-serif;
 		font-size: 11px;
 		line-height: 13px;
 		letter-spacing: 0.846154px;

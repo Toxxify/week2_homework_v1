@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 a {
   text-decoration: none;
@@ -22,13 +23,8 @@ li {
 }
 .main-title {
   display: none;
-  text-transform: uppercase;
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: 5.7px;
 }
 .section-title {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -49,7 +45,6 @@ li {
   background-color: #00A4E5;
 }
 .block-title {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -58,16 +53,13 @@ li {
   text-transform: uppercase;
 }
 .text {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 23px;
-  /* or 177% */
   letter-spacing: 0.1875px;
   color: #48555B;
   font-weight: 400px;
 }
 .btn {
-  font-family: 'Open Sans';
   display: inline-block;
   font-weight: bold;
   font-size: 13px;
@@ -80,6 +72,10 @@ li {
   background: #00A4E5;
   text-transform: uppercase;
   border: none;
+}
+.btn:hover {
+  transition: all 0.3s;
+  background: #0092cc;
 }
 /* variables */
 .intro {
@@ -99,24 +95,18 @@ li {
 }
 .intro__title {
   display: none;
-  text-transform: uppercase;
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: 5.7px;
 }
 .intro__title-img {
   margin-top: 90px;
   margin-bottom: 10px;
 }
 .intro__subtitle {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
 }
 .intro__btn {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
@@ -125,7 +115,7 @@ li {
   text-transform: uppercase;
 }
 .topbar {
-  padding: 24px 0 23px;
+  padding: 21px 0 21px;
   border-bottom: 1px solid #E6E6E6;
 }
 .topbar__wrapper {
@@ -142,7 +132,6 @@ li {
   justify-content: space-between;
 }
 .topbar__link {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -153,14 +142,14 @@ li {
   text-transform: uppercase;
 }
 .topbar__link:hover {
+  transition: all 0.2s;
   color: #00A4E5;
 }
 .story {
-  padding: 40px 0 48px;
+  padding: 42px 0 48px;
   margin-bottom: 40px;
 }
 .story__title {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -189,7 +178,6 @@ li {
   max-width: 405px;
 }
 .story__theme {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -202,10 +190,8 @@ li {
   color: #00A4E5;
 }
 .story__text {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 23px;
-  /* or 177% */
   letter-spacing: 0.1875px;
   color: #48555B;
   font-weight: 400px;
@@ -232,12 +218,10 @@ li {
   background: url(../img/build.jpg);
 }
 .story__gallery-text {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
-  /* or 121% */
   letter-spacing: 0.1875px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -249,7 +233,6 @@ li {
   margin-bottom: 80px;
 }
 .capabilities__tetle {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -275,7 +258,6 @@ li {
   transform: translateX(0);
 }
 .capabilities__slogan {
-  font-family: 'Open Sans';
   max-width: 405px;
   font-weight: 400;
   font-size: 11px;
@@ -284,7 +266,6 @@ li {
   color: #48555B;
 }
 .capabilities__btn {
-  font-family: 'Open Sans';
   display: inline-block;
   font-weight: bold;
   font-size: 13px;
@@ -298,6 +279,10 @@ li {
   text-transform: uppercase;
   border: none;
 }
+.capabilities__btn:hover {
+  transition: all 0.3s;
+  background: #0092cc;
+}
 .capabilities__slider {
   display: flex;
   justify-content: space-between;
@@ -305,10 +290,9 @@ li {
 .capabilities__card {
   border: 1px solid #E6E6E6;
   max-width: 295px;
-  padding: 38px 23px 24px;
+  padding: 35px 23px 24px;
 }
 .capabilities__card-title {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -319,10 +303,8 @@ li {
   margin-bottom: 13px;
 }
 .capabilities__card-text {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 23px;
-  /* or 177% */
   letter-spacing: 0.1875px;
   color: #48555B;
   font-weight: 400px;
@@ -335,13 +317,11 @@ li {
   background-position: bottom;
 }
 .offer__title {
-  font-family: 'Open Sans';
   margin: 0 auto;
   max-width: 350px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-  /* or 120% */
   letter-spacing: 0.15px;
   text-align: center;
   color: #48555B;
@@ -358,7 +338,6 @@ li {
   padding: 30px 0;
 }
 .newsletter__appeal {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -369,17 +348,18 @@ li {
 }
 .newsletter__form {
   font-size: 0;
+  display: flex;
+  align-items: center;
 }
 .newsletter__input {
   padding: 0 16px;
   width: 250px;
   border: 1px solid #979797;
   height: 40px;
-  line-height: 40;
+  line-height: 40px;
   font-size: 14px;
 }
 .newsletter__btn {
-  font-family: 'Open Sans';
   display: inline-block;
   font-weight: bold;
   font-size: 13px;
@@ -393,6 +373,10 @@ li {
   text-transform: uppercase;
   border: none;
 }
+.newsletter__btn:hover {
+  transition: all 0.3s;
+  background: #0092cc;
+}
 .footer {
   background: #141A20;
   color: #fff;
@@ -405,7 +389,6 @@ li {
   flex: 0 0 34%;
 }
 .company__title {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -416,17 +399,14 @@ li {
 }
 .company__text {
   max-width: 250px;
-  font-family: 'Open Sans';
   font-size: 11px;
   line-height: 19px;
-  /* or 173% */
   letter-spacing: 0.85px;
 }
 .links {
   flex: 0 0 34%;
 }
 .links__title {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -440,38 +420,37 @@ li {
   max-width: 262px;
 }
 .links__link {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 25px;
-  /* or 227% */
   letter-spacing: 0.846154px;
   text-transform: uppercase;
+}
+.links__link:hover {
+  transition: all 0.2s;
+  color: #00A4E5;
 }
 .contact {
   flex: 0 0 32%;
 }
 .contact__title {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
   text-align: left;
   letter-spacing: 0.846154px;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 .contact__wrapper {
   display: flex;
   max-width: 120px;
 }
 .contact__data {
-  font-family: 'Open Sans', sans-serif;
   max-width: 140px;
   font-size: 11px;
   line-height: 16px;
-  /* or 145% */
   letter-spacing: 0.846154px;
 }
 .contact__adress {
@@ -496,7 +475,6 @@ li {
   padding: 21px 0 22px;
 }
 .copy__text {
-  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.846154px;
