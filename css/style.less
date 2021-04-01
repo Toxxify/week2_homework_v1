@@ -17,7 +17,8 @@ li {
 	list-style: none;
 }
 .container {
-	max-width: 940px;
+	max-width: 980px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 .main-title {
@@ -101,9 +102,15 @@ li {
 	}
   &__logo-link {  }
   &__logo {  }
+	&__wrap {
+		padding: 0 10px;
+	}
   &__title {
 		.main-title ();
 		&-img {
+			margin: 0 auto;
+			max-width: 574px;
+			width: 100%;
 			margin-top: 90px;
 			margin-bottom: 10px;
 		}
@@ -193,6 +200,7 @@ li {
 	&__gallery {
 		display: flex;
 		align-items: flex-end;
+		justify-content: space-around;
 		margin: 0 -10px;
 		padding-bottom: 12px;
 		&-item {
@@ -202,12 +210,18 @@ li {
 			padding: 15px 14px;
 			&--plan {
 				background: url(../img/plan.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
 			}
 			&--manage {
 				background: url(../img/manage.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
 			}
 			&--build {
 				background: url(../img/build.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
 			}
 		}
 		&-text {
@@ -224,16 +238,18 @@ li {
 
 
 .capabilities {
+	padding-top: 18px;
 	&__wrapper {
 		display: flex;
-		align-items: flex-end;
 		justify-content: space-between;
-		margin-bottom: 80px;
+		margin-bottom: 76px;
 	}
-	&__tetle {
+	&__title {
 		.section-title();
 		margin-right: 120px;
+		margin-top: 0;
 		&::after {
+			bottom: -10px;
 			left: 0;
 			transform: translateX(0);
 		}
@@ -252,13 +268,14 @@ li {
 	&__slider {
 		display: flex;
 		justify-content: space-between;
+		margin: 0 -10px;
 	}
 	&__card {
 		border: 1px solid #E6E6E6;
 		max-width: 295px;
 		padding: 35px 23px 24px;
-		&-icon {
-		}
+		margin: 0 10px;
+		&-icon { }
 		&-title {
 			font-style: normal;
 			font-weight: bold;
@@ -339,6 +356,7 @@ li {
 	color: #fff;
 	&__wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		padding: 32px 0 40px;
 	}
 }
@@ -411,8 +429,17 @@ li {
 	&__telephone {
 		display: inline-block;
 		margin-bottom: 16px;
+		&:hover {
+			transition: all .2s;
+			color: @main-color;
+		}
 	}
-	&__website {	}
+	&__website {	
+		&:hover {
+			transition: all .2s;
+			color: @main-color;
+		}
+	}
 	&__social {
 		display: flex;
 		justify-content: space-between;
@@ -438,3 +465,181 @@ li {
 }
 
 
+
+
+@media (max-width: 992px) { 
+	.story {
+		&__wrapper {
+			display: block;
+		}
+		&__content {
+			max-width: 600px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+		}
+		&__gallery {
+			margin: 0 auto;
+			max-width: 600px;
+		}
+	}
+	.capabilities{
+		&__wrapper {
+			align-items: flex-start;
+		}
+		&__title {
+			margin-right: 40px;
+		}
+		&__slogan {
+			margin-right: 20px;
+		}
+	}
+	.company {
+		flex: 0 0 50%;
+		padding-right: 50px;
+	}
+	.links {
+		flex: 0 0 50%;
+	}
+	.contact {
+		margin-top: 40px;
+		flex: 0 0 100%;
+		justify-content: center;
+		&__data {
+			max-width: 50%;
+			flex: 0 0 50%;
+			padding-right: 50px;
+		}
+		&__social {
+			flex: 0 0 50%;
+			max-width: 90px;
+			margin-left: 0;
+		}
+		&__wrapper {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 768px) { 
+	.capabilities {
+		&__wrapper {
+			flex-wrap: wrap;			
+		}
+		&__title {
+			width: 100%;
+			margin-bottom: 40px;
+			margin-right: 0;
+			&::after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		&__slogan {
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		&__btn {
+			margin: 0 auto;
+		}
+		&__slider {
+			display: block;
+			text-align: center;
+			margin: 0;
+		}
+		&__card {
+			margin: 0 auto 30px;
+			max-width: 540px;
+		}
+	}
+	.offer {
+		padding-top: 140px;
+	}
+	.newsletter {
+		&__wrapper {
+			display: block;
+			text-align: center;
+		}
+		&__appeal {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		&__form {
+			font-size: 0;
+			display: block;
+			margin: 0 auto;
+		}
+		&__input {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 576px) { 
+	.container {
+		padding: 0 15px;
+	}
+	.section-title {
+		font-size: 17px;
+	}
+	.topbar__list {
+		display: none; /**/
+	}
+	.story {
+		margin-bottom: 0;
+		&__gallery {
+			max-width: 320px;
+			&-item {
+				display: inline-block;
+				width: 90px;
+				height: 160px;
+				margin: 0 4px;
+				padding: 8px;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			&-text {
+				font-size: 15px;
+			}
+		}
+	}
+	.company {
+		max-width: 380px;
+		margin: 0 auto;
+		flex: 0 0 100%;
+		&__text {
+			max-width: 100%;
+		}
+	}
+	.links {
+		max-width: 380px;
+		margin: 0 auto;
+		margin-top: 40px;
+		flex: 0 0 100%;
+		&__wrapper {
+			max-width: 90%;
+		}
+	}
+	.offer__title {
+		font-size: 24px;
+		padding: 0 10px;
+	}
+	.contact {
+		max-width: 380px;
+		margin: 0 auto;
+		margin-top: 40px;
+		&__wrapper {
+			display: block;
+		}
+		&__data {
+			margin-bottom: 25px;
+			max-width: 90%;
+		}
+	}
+}
